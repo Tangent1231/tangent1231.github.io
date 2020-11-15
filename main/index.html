@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% includes hero.html %}
+{% include hero.html %}
 
 <div class="container">
 	<div class="row">
@@ -17,9 +17,9 @@ layout: default
 	<div class="row">
 	{% if site.posts.size > 0 %}
 		{% for post in paginator.posts %}
-			{% includes article-content.html %}
+			{% include article-content.html %}
 		{% endfor %}
 	{% endif %}
 	</div>
 </div>
-{% includes pagination.html %}
+{% include pagination.html %}
